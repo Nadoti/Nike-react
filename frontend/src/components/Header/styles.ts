@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const HeaderStyles = styled.header`
   background: var(--black-1000);
+  margin-bottom: 2rem;
 
 `
 

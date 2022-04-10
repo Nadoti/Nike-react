@@ -1,7 +1,6 @@
-import { BrowserRouter, Routes,
-  Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Header } from "./components/Header/Header"
-import { Teste } from "./components/Teste"
+import { Home } from "./components/Home/Home"
 import { GlobalStyle } from "./styles/global"
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="teste" element={<Teste />}/>
+          <Route path="/" element={<Home />}/>
         </Routes>
       </BrowserRouter>
       
