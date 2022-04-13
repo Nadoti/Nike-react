@@ -5,6 +5,8 @@ import tenisVermelho from '../../../img/tenisVermelho.png'
 import { MainStyles } from './styles'
 
 export function Main() {
+
+
   return(
     <MainStyles>
       <div className='info'>
@@ -13,7 +15,7 @@ export function Main() {
         <a href="/product">Buy</a>
       </div>
       <figure>
-        <img src={tenisPrincipal} alt="" />
+        <img className='img_product_principal' src={tenisPrincipal} alt="" />
         <div>
           <img src={tenisAzul} alt="" />
           <img src={tenisVerde} alt="" />

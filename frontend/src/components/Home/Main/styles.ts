@@ -6,6 +6,7 @@ export const MainStyles = styled.main`
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20rem;
 
   .info {
     margin-bottom: 10rem;
@@ -47,12 +48,61 @@ export const MainStyles = styled.main`
   }
 
   figure {
+    .img_product_principal {
+      width: 100%;
+      margin-left: 1rem;
+    }
     div {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
       img {
         max-width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  @media (max-width: 1640px) {
+    .info {
+      max-width: 600px;
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+      }
+      p {
+        font-size: 0.875rem;
+      }
+      a {
+        padding: 15px 50px;
+      }
+    }
+
+  }
+
+  @media (max-width: 810px) {
+    display: flex;
+    flex-direction: column;
+    
+    .info {
+      display: inline-block;
+      text-align: center;
+    }
+
+    figure {
+      .img_product_principal {
+        display: block;
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+      }
+
+      div {
+        img {
+          margin: 20px;
+        }
       }
     }
   }
